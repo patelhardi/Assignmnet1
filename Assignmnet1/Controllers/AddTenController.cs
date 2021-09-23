@@ -14,7 +14,7 @@ namespace Assignmnet1.Controllers
         /// </summary>
         /// <param name="id">The input number</param>
         /// <returns>inpt number plus 10</returns>
-        /// GET api/AddTen/0 -> 10
+        /// GET api/addten/0 -> 10
         public int Get(int id)
         {
             var addTen = id + 10;
