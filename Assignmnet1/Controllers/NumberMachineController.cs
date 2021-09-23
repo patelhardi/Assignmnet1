@@ -17,8 +17,8 @@ namespace Assignmnet1.Controllers
         /// subtract 1 from that result
         /// </summary>
         /// <param name="id">input number to do mathematical expressions</param>
-        /// <returns>total number after all expression</returns>
-        /// GET api/numbermachine/-5 -> 1
+        /// <returns>total number int value after all expression</returns>
+        /// <example>GET api/numbermachine/-5 -> 1</example>
 
         public int Get(int id)
         {

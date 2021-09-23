@@ -14,7 +14,7 @@ namespace Assignmnet1.Controllers
         /// </summary>
         /// <param name="id">Input number that we have to square</param>
         /// <returns>sqaure of the input number</returns>
-        /// GET api/square/2 -> 4
+        /// <example>GET api/square/2 -> 4</example>
         public int Get(int id)
         {
             var square = id * id;
