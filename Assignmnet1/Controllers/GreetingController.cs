@@ -13,7 +13,8 @@ namespace Assignmnet1.Controllers
         /// return string 'Hello World!'
         /// </summary>
         /// <returns>string 'Hello World!'</returns>
-        /// POST api/greeting -> 'Hello World!' need command prompt 
+        /// POST api/greeting -> 'Hello World!' 
+        /// need command prompt for output curl -d "" http://localhost:50779/api/greeting -> 'Hello World!'
         public string POST()
         {
             return "Hello World!";
