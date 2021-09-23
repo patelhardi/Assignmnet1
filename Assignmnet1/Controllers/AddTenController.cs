@@ -10,6 +10,7 @@ namespace Assignmnet1.Controllers
     public class AddTenController : ApiController
     {
         /// <summary>
+        /// ///Hello Testing
         /// Add 10 into the input number
         /// </summary>
         /// <param name="id">The input number</param>
