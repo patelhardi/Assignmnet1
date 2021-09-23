@@ -9,12 +9,6 @@ namespace Assignmnet1.Controllers
 {
     public class HostingCostController : ApiController
     {
-        //declare variables
-        public int days;
-        public double priceperday;
-        public double hst;
-        public double total;
-
         /// <summary>
         /// Charging client for 14 days at $5.50 CAD plus 13% HST display 3 strings with Total cost
         /// IEnumerable<string> returns multiple strings, used for string array
@@ -25,11 +19,11 @@ namespace Assignmnet1.Controllers
         /// <example>GET api/hostingcost/0 -> '1 fortnight at $5.50/FN = $5.50 CAD', 'HST 13% = $0.72 CAD', 'Total = $6.22 CAD'</example>
         public IEnumerable<string> Get(int id)
         {
-            days = (id / 14) + 1;       
-            priceperday = days * 5.50;          
-            hst = priceperday * 0.13;           
-            total = priceperday + hst;          
-            return new string[] { days + " fortnights at $5.50/FN = $" + Math.Round(priceperday,2).ToString("0.00") + " CAD", "HST 13% = $" + Math.Round(hst,2).ToString("0.00") +" CAD", "Total = $" + Math.Round(total,2).ToString("0.00") + " CAD"};
+            int days = (id / 14) + 1;       
+            double priceperday = days * 5.50;          
+            double hst = priceperday * 0.13;           
+            double total = priceperday + hst;          
+            return new string[] { days.ToString() + " fortnights at $5.50/FN = $" + Math.Round(priceperday,2).ToString("0.00") + " CAD", "HST 13% = $" + Math.Round(hst,2).ToString("0.00") +" CAD", "Total = $" + Math.Round(total,2).ToString("0.00") + " CAD"};
         }
     }
 }

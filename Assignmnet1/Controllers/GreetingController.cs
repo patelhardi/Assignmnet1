@@ -29,7 +29,7 @@ namespace Assignmnet1.Controllers
         /// <example>GET api/greeting/3 -> 'Greeting to 3 people!'</example>
         public string Get(int id)
         {
-            return "Greeting to " + id + " People!";
+            return "Greeting to " + id.ToString() + " People!";
         }
     }
 }

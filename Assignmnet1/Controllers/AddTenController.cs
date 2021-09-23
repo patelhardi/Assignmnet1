@@ -17,7 +17,7 @@ namespace Assignmnet1.Controllers
         /// <example>GET api/addten/0 -> 10</example>
         public int Get(int id)
         {
-            var addTen = id + 10;
+            int addTen = id + 10;
             return addTen;
         }
     }

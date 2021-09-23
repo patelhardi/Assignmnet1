@@ -22,10 +22,10 @@ namespace Assignmnet1.Controllers
 
         public int Get(int id)
         {
-            var addTen = id + 10;
-            var multiTwo = addTen * 2;
-            var divideFive = multiTwo / 5;
-            var subOne = divideFive - 1;
+            int addTen = id + 10;
+            int multiTwo = addTen * 2;
+            int divideFive = multiTwo / 5;
+            int subOne = divideFive - 1;
             return subOne;
         }
     }
